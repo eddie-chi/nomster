@@ -1,0 +1,19 @@
+default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    username: postgres
+    password: password
+    host: localhost
+
+development:
+    <<: *default
+    database: roar_development
+
+test:
+    <<: *default
+    database: roar_test
+
+production:
+    <<: *default
+    database: roar_production
