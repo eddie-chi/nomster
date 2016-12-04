@@ -47,3 +47,8 @@ gem 'bootstrap-sass', '~> 3.3.5.1'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 gem 'rails_12factor', group: :production
+# will_paginate
+gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
+
+#simpleform
+gem 'simple_form'
