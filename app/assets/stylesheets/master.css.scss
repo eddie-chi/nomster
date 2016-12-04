@@ -32,7 +32,13 @@ h1, h2, h3, h4, h5, h6 {
 /** Navigation **/
 
 .navbar.navbar-inverse {
-  background:url('/assets/nav.png');
-  border-radius: 0;
+  // background-color: rgba(232, 176, 86, 0.3);
+  border-radius: 0px;
   box-shadow: 0px 1px 3px #2a2a2a;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #FFFFFF;
+  font-weight: 600;
+  letter-spacing: -0.3px;
 }
