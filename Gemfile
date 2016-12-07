@@ -54,3 +54,7 @@ gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'simple_form'
 #gemdevise
 gem 'devise', '>= 3.2.4'
+#geocoder
+gem "geocoder", "1.3.4"
+#gemfigaro
+gem "figaro", ">= 1.0.0"
