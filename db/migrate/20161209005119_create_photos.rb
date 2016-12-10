@@ -3,7 +3,7 @@ class CreatePhotos < ActiveRecord::Migration
     create_table :photos do |t|
 
       t.string :caption
-      t.integer :place_id <!-- Perhaps place_id is created like this?? -->
+      t.integer :place_id
 
       t.timestamps
     end

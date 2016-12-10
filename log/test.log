@@ -1,0 +1,22 @@
+  [1m[36m (545.9ms)[0m  [1mDROP DATABASE IF EXISTS "roar_test"[0m
+  [1m[35m (1264.5ms)[0m  CREATE DATABASE "roar_test" ENCODING = 'unicode'
+  [1m[36mSQL (0.7ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (273.3ms)[0m  CREATE TABLE "comments" ("id" serial primary key, "message" text, "rating" character varying(255), "user_id" integer, "place_id" integer, "created_at" timestamp, "updated_at" timestamp) 
+  [1m[36m (98.1ms)[0m  [1mCREATE INDEX "index_comments_on_place_id" ON "comments" USING btree ("place_id")[0m
+  [1m[35m (98.1ms)[0m  CREATE INDEX "index_comments_on_user_id_and_place_id" ON "comments" USING btree ("user_id", "place_id")
+  [1m[36m (110.4ms)[0m  [1mCREATE TABLE "photos" ("id" serial primary key, "caption" character varying(255), "place_id" integer, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (187.7ms)[0m  CREATE TABLE "places" ("id" serial primary key, "name" character varying(255), "description" text, "address" character varying(255), "created_at" timestamp, "updated_at" timestamp, "user_id" integer, "latitude" float, "longitude" float) 
+  [1m[36m (87.5ms)[0m  [1mCREATE INDEX "index_places_on_user_id" ON "places" USING btree ("user_id")[0m
+  [1m[35m (164.3ms)[0m  CREATE TABLE "users" ("id" serial primary key, "email" character varying(255) DEFAULT '' NOT NULL, "encrypted_password" character varying(255) DEFAULT '' NOT NULL, "reset_password_token" character varying(255), "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) 
+  [1m[36m (87.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" USING btree ("email")[0m
+  [1m[35m (87.2ms)[0m  CREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" USING btree ("reset_password_token")
+  [1m[36m (20.5ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (88.0ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (10.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161209005119')
+  [1m[36m (11.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20161206014145')[0m
+  [1m[35m (11.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161203203343')
+  [1m[36m (11.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20161206004205')[0m
+  [1m[35m (11.0ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20161207033841')
+  [1m[36m (11.0ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20161207220606')[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
