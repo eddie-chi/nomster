@@ -55,6 +55,10 @@ class PlacesController < ApplicationController
     redirect_to root_path
   end
 
+  def photo
+    @Photos = Photo.all
+  end
+
   private
 
   def place_params
