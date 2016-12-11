@@ -50504,3 +50504,292 @@ Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-12-10 17:15:20 -0600
 
 
 Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-10 17:15:20 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.5ms)[0m  SELECT "places".* FROM "places" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (2.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  Rendered places/index.html.erb within layouts/application (35.5ms)
+Completed 200 OK in 169ms (Views: 154.0ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/dog.png" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-11 15:34:03 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+Processing by PlacesController#index as HTML
+  [1m[36mPlace Load (0.5ms)[0m  [1mSELECT "places".* FROM "places" LIMIT 5 OFFSET 0[0m
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."place_id" = $1[0m  [["place_id", 1]]
+  Rendered places/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/dog.png" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-11 15:44:56 -0600
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+Processing by PlacesController#index as HTML
+  [1m[35mPlace Load (0.4ms)[0m  SELECT "places".* FROM "places" LIMIT 5 OFFSET 0
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."place_id" = $1  [["place_id", 1]]
+  Rendered places/index.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 20ms (Views: 19.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/master.css?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/places.css?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/photos.css?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap-sprockets.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/places.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/photos.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/dog.png" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bg.jpg" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff2" for 127.0.0.1 at 2016-12-11 15:45:01 -0600
+
+
+Started GET "/places/1" for 127.0.0.1 at 2016-12-11 16:18:57 -0600
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlace Load (1.7ms)[0m  [1mSELECT "places".* FROM "places" WHERE "places"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+Completed 500 Internal Server Error in 28ms
+
+NoMethodError (undefined method `mount_uploader' for #<Class:0x007f595842e470>):
+  app/models/photo.rb:5:in `<class:Photo>'
+  app/models/photo.rb:1:in `<top (required)>'
+  app/controllers/places_controller.rb:23:in `show'
+
+
+  Rendered /usr/lib/ruby/gems/2.3.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (0.6ms)
+  Rendered /usr/lib/ruby/gems/2.3.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.3ms)
+  Rendered /usr/lib/ruby/gems/2.3.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.0ms)
+  Rendered /usr/lib/ruby/gems/2.3.0/gems/actionpack-4.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (10.2ms)
