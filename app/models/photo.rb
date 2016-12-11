@@ -1,4 +1,6 @@
 class Photo < ActiveRecord::Base
-  t.string :caption
-  t.integer :place_id
+  belongs_to :user
+  belongs_to :place
+
+  mount_uploader :picture
 end
