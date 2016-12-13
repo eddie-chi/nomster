@@ -35,6 +35,7 @@ h1, h2, h3, h4, h5, h6 {
   // background-color: rgba(232, 176, 86, 0.3);
   border-radius: 0px;
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -96,4 +97,21 @@ blockquote:before {
 }
 blockquote p {
   display: inline;
+}
+
+/** Image Carousel **/
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: auto;
+    height: 550px;
+    border: 2px solid gray;
+    margin: auto;
+}
+
+.carousel-caption {
+    font-family: 'Lobster', cursive;
+    font-size: 60px;
+    font-weight: 100;
+    text-shadow: rgba(0,0,0,0.95) 2px 2px;
+    background-color: rgba(0,0,0,0.5);
 }
