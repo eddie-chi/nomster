@@ -58,3 +58,5 @@ gem 'devise', '>= 3.2.4'
 gem "geocoder", "1.3.4"
 #gemfigaro
 gem "figaro", ">= 1.0.0"
+#carrierwave
+gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
