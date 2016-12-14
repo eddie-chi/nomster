@@ -20,7 +20,7 @@ class PlacesController < ApplicationController
   def show
     @place = Place.find(params[:id])
     @comment = Comment.new
-    @photo = Photo.new
+    # @photo = Photo.new
   end
 
   def edit
@@ -56,8 +56,8 @@ class PlacesController < ApplicationController
     redirect_to root_path
   end
 
-  def photo
-    @Photos = Photo.all
+  def new
+    @photo = Photo.new
   end
 
   private
