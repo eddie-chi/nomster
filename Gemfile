@@ -60,3 +60,5 @@ gem "geocoder", "1.3.4"
 gem "figaro", ">= 1.0.0"
 #carrierwave
 gem 'carrierwave', '>= 1.0.0.rc', '< 2.0'
+#gemfog
+gem "fog"
