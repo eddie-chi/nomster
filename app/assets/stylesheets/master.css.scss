@@ -33,18 +33,9 @@ h1, h2, h3, h4, h5, h6 {
 /** Navigation **/
 
 .navbar.navbar-inverse {
-  // background-color: rgba(232, 176, 86, 0.3);
   border-radius: 0px;
   box-shadow: 0px 1px 3px #2a2a2a;
-  margin-bottom: 0;
   opacity: 0.9;
-  height: 60px;
-}
-
-.navbar-inverse .navbar-brand {
-  color: #FFFFFF;
-  font-weight: 600;
-  letter-spacing: -0.3px;
 }
 
 /** Validation error **/
@@ -71,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 .img-responsive {
   height: 50px;
   width: 60px;
-  margin-top: 0;
+  margin-top: 8px;
 }
 
 
